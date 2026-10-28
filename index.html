@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Learning Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="brand">Cyber<span>Shield</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#modules">Modules</a>
+      <a href="#quiz">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="tag">LEARN • PRACTICE • PROTECT</p>
+      <h1>Cybersecurity Learning Hub</h1>
+      <p>
+        Build your cybersecurity knowledge with beginner-friendly
+        lessons, practical concepts and quizzes.
+      </p>
+      <a class="btn primary" href="#modules">Start Learning</a>
+    </section>
+
+    <section id="modules" class="section">
+      <h2>Learning Modules</h2>
+      <p class="subtitle">Choose a topic to explore study notes.</p>
+      <div id="course-list" class="course-grid"></div>
+    </section>
+
+    <section id="module-details" class="module-details" hidden>
+      <div id="module-content"></div>
+      <button id="close-module" class="btn">Close Module</button>
+    </section>
+
+    <section id="quiz" class="section">
+      <h2>Test Your Knowledge</h2>
+      <p class="subtitle">Check what you have learned.</p>
+
+      <div class="quiz-card">
+        <div class="quiz-top">
+          <span id="question-count">Question 1</span>
+          <span id="score">Score: 0</span>
+        </div>
+
+        <h3 id="question">Loading question...</h3>
+        <div id="options" class="options"></div>
+        <p id="feedback" role="status"></p>
+
+        <button id="next-question" class="btn primary">
+          Next Question
+        </button>
+        <button id="restart-quiz" class="btn" hidden>
+          Restart Quiz
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>CyberShield Learning Hub | Learn Cybersecurity Responsibly</p>
+  </footer>
+</body>
+</html>
